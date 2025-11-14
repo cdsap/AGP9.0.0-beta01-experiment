@@ -14,6 +14,7 @@ class CompositeBuildPluginAndroidLib : Plugin<Project> {
             with(pluginManager) {
                 apply("com.android.library")
                 apply("com.google.devtools.ksp")
+                apply("kotlin-android")
                 apply("dagger.hilt.android.plugin")
                 apply("org.jetbrains.kotlin.plugin.compose")
             }
